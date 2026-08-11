@@ -16,8 +16,7 @@ public class PlayerControllerScript : MonoBehaviour
     [SerializeField] private string actionMapName = "Player";
     [SerializeField] private string moveActionName = "Move";
 
-
-    [Header("Movement")]
+    
     [Header("Movement")]
     [SerializeField] private float maxSpeed = 8f;
     [SerializeField] private float accel = 12f;  
