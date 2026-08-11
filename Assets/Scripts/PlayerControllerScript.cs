@@ -1,7 +1,5 @@
-using System.Numerics;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -72,7 +70,6 @@ public class PlayerControllerScript : MonoBehaviour
         Vector3 moveDir = playerRotation.GetMoveDirection(_moveInput);
         Vector3 inputDir = Vector3.ProjectOnPlane(moveDir, _groundNormal).normalized;
  
-        bool hasInput = _moveInput.sqrMagnitude > 0.0001f;
 
         if (_moveInput.sqrMagnitude > 0.0001f)
         {
